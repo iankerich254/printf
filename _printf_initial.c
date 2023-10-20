@@ -27,9 +27,9 @@ Here:
 		j = 6;
 		while (j >= 0)
 		{
-			if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])
+			if (m[j].spec[0] == format[i] && m[j].spec[1] == format[i + 1])
 			{
-				len += m[j].f(args);
+				len += m[j].fp(args);
 				i = i + 2;
 				goto Here;
 			}
